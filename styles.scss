@@ -1,0 +1,179 @@
+// Variables
+$espacio-entre-tarjetas: 20px;
+$ancho-tarjetas: calc(33.33% - #{$espacio-entre-tarjetas * 2});
+$color-frente-tarjeta: #bbb;
+$color-atras-tarjeta: #2980b9;
+
+.navbar {
+  height: 80px;
+  background-color: #212529;
+  box-shadow: 0 0 5px #000 !important;
+  .navbar-brand {
+      color: #f1b165;
+  }
+      .nav-link {
+      color: #f1b165 !important;
+  }
+  .navbar-brand span {
+      color: #f1b165;
+      font-style: italic;
+      font-size: 40px;
+  }
+  } 
+  @media only screen and (min-width: 0) and (max-width: 576px) {
+      .navbar-collapse {
+          background-color: #212529;
+          display: flex;
+          justify-content: center !important;
+      }
+      .fondo {
+          background-size: auto;
+      }
+      .content {
+          padding: 5% 10%;
+      }
+      .content2 {
+          padding: 5% 10%;
+          margin: 0 auto;
+          margin-left: 15px;
+      }
+      }  
+      .fondo {
+      background-image: url('images/musician-g1da207504_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 100px 0;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .content {
+          background-color: rgba(0, 0, 0, 0.75);
+          border-radius: 10px;
+          color: white;
+          text-align: center;
+          padding: 30px;
+          margin: 0 auto;
+          box-sizing: border-box;
+          }
+          .content2 {
+          background-color: rgba(0, 0, 0, 0.75);
+          padding: 30px;
+          margin-right: 15px;
+          border-radius: 10px;
+          color: white;
+          text-align: justify;
+          box-sizing: border-box;
+          }
+          .content3 {
+          background-color: rgba(0, 0, 0, 0.75);
+          padding: 30px;
+          margin-right: 15px;
+          border-radius: 10px;
+          color: white;
+          text-align: left;
+          margin-left: 0px;
+
+          p {
+              text-align: left;
+          }
+          .form {
+            width: 500px;
+            margin-left: 11%;
+            border: #bbb solid 1px;
+            border-radius: 20px;
+            padding: 10px 30px;
+            position: absolute;
+            display: inline-table;
+          }
+          }
+          
+          // Estilos para las flip cards
+      .flip-card-container {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: $ancho-tarjetas;
+        height: 240px;
+        perspective: 1000px;
+        margin: $espacio-entre-tarjetas;
+        box-sizing: border-box;
+      }
+
+    // Estilos para pantallas más pequeñas (por ejemplo, teléfonos móviles)
+      @media (max-width: 767px) {
+        .flip-card {
+          width: 100%;
+          margin: $espacio-entre-tarjetas * 2;
+        }
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: $color-frente-tarjeta;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: $color-atras-tarjeta;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+
+            /**footer**/
+            footer {
+              background-color: #212529;
+              color: white;
+              text-align: center;
+              font-size: 13px;
+              padding: 5px;
+            
+              p {
+                margin-bottom: 10px;
+              }
+            
+              i {
+                color: #f1b165;
+                font-size: 15px;
+                letter-spacing: 30px;
+              }
+            }
+            
+            .Redes {
+              flex-direction: column;
+            }
+
+            /**end footer**/
+            
